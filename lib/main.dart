@@ -24,13 +24,7 @@ class data{
   static List posterlink=List();
 }
 class _MyAppState extends State<MyApp> {
-  List<String> moviename=[];
-  List<double> avgvote=[];
-  List<String> posterlink=[];
-  List<String> genrenames=[];
-  List<String> movienameiteam=[];
-  List<double> avgvoteiteam=[];
-  List<String> posterlinkiteam=[];
+ 
   ScrollController _scrollController=ScrollController();
   var imageurl="http://image.tmdb.org/t/p/w185//";
 List <List> genrelists=List();
@@ -40,6 +34,12 @@ bool ontap=false;
   var gettoprated="https://api.themoviedb.org/3/movie/top_rated?api_key=b1d0f6fbc8e10c5a4982776c6073f1c9&language=en-US&region=US";
   genre s;
   bool loading=true;
+   List<String> moviename=[];
+  List<double> avgvote=[];
+  List<String> posterlink=[];
+  List<String> movienameiteam=[];
+  List<double> avgvoteiteam=[];
+  List<String> posterlinkiteam=[];
   @override
   void initState() {
      getapi(gettoprated);
